@@ -3,7 +3,7 @@ LIBS = libbgfx.a libbimg.a libbx.a libglfw.a -framework QuartzCore -framework Me
 CXXFLAGS += "-std=c++17"
 
 output: main.o 
-	clang++ main.o -o output -g $(CXXFLAGS) $(LIBS)
+	clang++ main.o -o output.out -g $(CXXFLAGS) $(LIBS)
 
 main.o: main.cpp
 	clang++ -c main.cpp -g $(CXXFLAGS) $(INC)
